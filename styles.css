@@ -1,4 +1,4 @@
-*,
+﻿*,
     *::before,
     *::after {
       box-sizing: border-box;
@@ -1378,5 +1378,34 @@
       .rm-nums {
         grid-template-columns: 1fr;
         gap: 1px;
+      }
+    }
+    /* ── TABLET (769px – 1024px) ── */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      section {
+        padding: 72px 32px;
+      }
+
+      .nav-top {
+        padding: 0 32px;
+      }
+
+      .nav-tabs {
+        padding: 0 32px;
+      }
+
+      .problem-cards,
+      .how-steps,
+      .how-steps-row2,
+      .who-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      footer {
+        padding: 32px;
       }
     }
